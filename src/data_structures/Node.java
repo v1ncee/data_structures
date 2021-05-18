@@ -6,15 +6,23 @@ public class Node<T> {
 	private Node<T> nextNode;
 	
 	public Node (T o, Node<T> n) {
-		data = o;
-		nextNode = n;
+		setData(o);
+		setNextNode(n);
 	}
 	
-	public T getObject() {
+	public T getData() {
 		return data;
+	}
+	
+	public void setData(T data) {
+		this.data = data;
 	}
 	
 	public Node<T> getNextNode() {
 		return nextNode;
+	}
+	
+	public void setNextNode(Node<T> nextNode) {
+		this.nextNode = nextNode;
 	}
 }
